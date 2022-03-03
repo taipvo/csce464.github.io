@@ -23,3 +23,15 @@
 .carousel-inner {
     height: 450px;
 }
+
+.column {
+    float: left;
+    width: 15%;
+    padding: 5px;
+}
+
+.partner {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
