@@ -22,3 +22,7 @@
 .text-white {
     text-decoration: none;
 }
+
+.carousel-inner {
+    height: 450px;
+}
