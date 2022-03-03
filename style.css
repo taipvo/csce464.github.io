@@ -16,12 +16,17 @@
     color: black;
 }
 
+.nav-tabs li a {
+    color: white;
+    text-transform: uppercase;
+}
+
 .text-white {
     text-decoration: none;
 }
 
 .carousel-inner {
-    height: 450px;
+    height: 700px;
 }
 
 .column {
@@ -34,4 +39,22 @@
     text-align: center;
     align-items: center;
     font-size: 30px;
+}
+
+.carousel-caption {
+    margin-bottom: 50%;
+}
+
+.btn-primary {
+    background: #e42448;
+    border-color: transparent !important;
+    color: #fff !important;
+    border-radius: 50px;
+    padding: 10px 25px !important;
+    width: 100px;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background: #181174;
 }
