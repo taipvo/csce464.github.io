@@ -12,11 +12,8 @@
 }
 
 .nav-link:hover {
-    background-color: lightblue;
-}
-
-.navbar .fa {
-    color: red;
+    background-color: lightgray;
+    color: black;
 }
 
 .text-white {
