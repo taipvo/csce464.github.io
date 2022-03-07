@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Smooch Sans', sans-serif;
     font-size: 25px;
+    text-decoration: none;
 }
 
 .logo {
@@ -12,7 +13,7 @@
 }
 
 .nav-link:hover {
-    background-color: lightgray;
+    background-color: yellowgreen;
     color: black;
 }
 
@@ -56,6 +57,15 @@
     text-transform: uppercase;
 }
 
+.partner h2::after {
+    display: block;
+    content: "";
+    width: 170px;
+    height: 5px;
+    background-color: yellowgreen;
+    margin: 5px auto 5px;
+}
+
 .carousel-caption {
     margin-bottom: 50%;
 }
@@ -72,4 +82,150 @@
 
 .btn-primary:hover {
     background: #181174;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.active-filter-btn {
+    background-color: yellowgreen;
+    color: #fff!important;
+    border-color: yellowgreen!important;
+}
+
+.btn:hover {
+    background-color: yellowgreen;
+}
+
+.image span {
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.image1 span {
+    bottom: 20px;
+    left: 20px;
+    width: 46px;
+    height: 46px;
+}
+
+.sale-off {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: black;
+}
+
+.sale {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: lightcoral;
+}
+
+.new {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+}
+
+.description {
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+}
+
+.discount {
+    position: relative;
+    height: 150px;
+    background-color: yellow;
+}
+
+.discount p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.discount .member {
+    position: absolute;
+    margin-left: 45%;
+    margin-right: 45%
+}
+
+.dropdown-menu {
+    background-color: red;
+}
+
+.signUpBtn {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+
+.signUpBtn:hover {
+    background-color: white;
+    border: 1px solid;
+    color: black;
+}
+
+.dropdown-menu {
+    background-color: #343A40;
+    color: white;
+    border: 1px solid white;
+}
+
+.dropdown-menu:hover {
+    color: black;
+}
+
+.testi {
+    text-align: center;
+}
+
+.testimonials .row {
+    margin-top: 30px;
+}
+
+.col-md-4 {
+    margin: 40px auto;
+}
+
+.profile {
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+
+.profile img {
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid white;
+}
+
+.user {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
