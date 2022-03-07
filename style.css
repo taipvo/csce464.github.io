@@ -114,12 +114,14 @@
     height: 46px;
 }
 
-.sale-off {
+.image1 .sale-off {
     position: absolute;
+    top: 1rem;
+    padding: 5px 10px;
+    z-index: 1;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    background-color: black;
+    background-color: lightcoral;
 }
 
 .sale {
