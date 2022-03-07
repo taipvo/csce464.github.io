@@ -128,6 +128,29 @@
     color: white;
 }
 
+.image-resize {
+    height: 400px;
+    width: 400px;
+}
+
+.join {
+    position: absolute;
+    top: 50%;
+    right: 48%;
+    background-color: black;
+    color: white;
+}
+
+.join::after {
+    padding-left: 10px;
+    content: "\2192";
+    border: 3px solid black;
+}
+
+.join:hover {
+    cursor: pointer;
+}
+
 .saveBtn {
     padding-left: 70px;
 }
