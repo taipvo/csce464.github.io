@@ -107,21 +107,29 @@
     border-radius: 50%;
 }
 
-.image1 span {
-    bottom: 20px;
-    left: 20px;
+
+/* .image1 span {
+    left: 60px;
     width: 46px;
     height: 46px;
-}
+} */
 
 .image1 .sale-off {
     position: absolute;
-    top: 1rem;
-    padding: 5px 10px;
+    top: 60px;
+    left: 60px;
+    width: 50px;
+    height: 35px;
+    padding-left: 10px;
     z-index: 1;
     align-items: center;
     justify-content: center;
-    background-color: lightcoral;
+    background-color: black;
+    color: white;
+}
+
+.saveBtn {
+    padding-left: 70px;
 }
 
 .sale {
