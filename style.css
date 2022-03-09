@@ -141,6 +141,10 @@
     color: white;
 }
 
+.msg {
+    color: red;
+}
+
 .join::after {
     padding-left: 10px;
     content: "\2192";
