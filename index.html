@@ -20,146 +20,143 @@
     <script src="script.js"></script>
 
 
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand" href="#"><img class="logo" src="asset/brand.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div id="header">
+        <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><img class="logo" src="asset/brand.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav nav-tabs text-nowrap flex-row mx-md-auto order-1 order-md-2">
-                    <li role="presentation" class="nav-item">
-                        <a class="nav-link active-filter-btn" href="index.html">Home</a>
-                    </li>
-                    <li role="presentation" class="nav-item">
-                        <a class="nav-link" href="men.html">Men</a>
-                    </li>
-                    <li role="presentation" class="nav-item">
-                        <a class="nav-link" href="women.html">Women</a>
-                    </li>
-                    <li role="presentation" class="nav-item">
-                        <a class="nav-link" href="kids.html">Kids</a>
-                    </li>
-                    <li role="presentation" class="nav-item">
-                        <a class="nav-link" href="feedback.html">Feedback</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav nav-tabs text-nowrap flex-row mx-md-auto order-1 order-md-2">
+                        <li role="presentation" class="nav-item">
+                            <a class="nav-link active-filter-btn" href="index.html">Home</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                            <a class="nav-link " href="men.html">Men</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                            <a class="nav-link" href="women.html">Women</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
 
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav nav-tabs text-nowrap flex-row mx-md-auto order-1 order-md-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav nav-tabs text-nowrap flex-row mx-md-auto order-1 order-md-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa-solid fa-user"></i>
                             </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" data-toggle="modal" data-target="#logInModal">Log in</a>
-                        </div>
-                        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle">Log In</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#logInModal">Log in</a>
+                            </div>
+                            <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Log In</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                       </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form form class="needs-validation" method="post" novalidate>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email Address</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email address" required>
-                                                <div class="invalid-feedback">
-                                                    Please enter your email.
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Email Address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email address">
                                                 </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="examplePassword">Password</label>
-                                                <input type="password" class="form-control" id="examplePassword" name="examplePassword" aria-describedby="emailHelp" placeholder="*********" required>
-                                                <div class="invalid-feedback">
-                                                    Please enter your your password.
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="*********">
                                                 </div>
-                                            </div>
-                                            <p>Don't have an account? <a style="color:red; text-decoration:none;" href="#">Register here</a></p>
+                                                <p>Don't have an account? <a style="color:red; text-decoration:none;" href="#">Register here</a></p>
+                                            </form>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="submit" onclick="checkEmailPasswords()" class="btn btn-secondary">Log In</button>
+                                                <button type="button" class="btn btn-secondary">Log In</button>
                                             </div>
-                                        </form>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle">Sign Up</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Sign Up</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                       </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form class="needs-validation" method="post" autocomplete="off" novalidate>
-                                            <div class="form-group">
-                                                <label for="validationFirstName">First Name</label>
-                                                <input type="text" class="form-control" id="validationFirstName" name="validationFirstName" placeholder="Enter your first name" autocomplete="off" required>
-                                                <div class="invalid-feedback">
-                                                    Please enter your first name.
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="needs-validation" method="post" novalidate>
+                                                <div class="form-group">
+                                                    <label for="validationFirstName">First Name</label>
+                                                    <input type="text" class="form-control" id="validationFirstName" name="validationFirstName" placeholder="Enter your first name" required>
+                                                    <div class="invalid-feedback">
+                                                        Please enter your first name.
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="form-group">
-                                                <label for="validationLastName">Last Name</label>
-                                                <input type="text" class="form-control" id="validationLastName" name="validationLastName" placeholder="Enter your last name" autocomplete="off" required>
-                                                <div class="invalid-feedback">
-                                                    Please enter your last name.
+                                                <div class="form-group">
+                                                    <label for="validationLastName">Last Name</label>
+                                                    <input type="text" class="form-control" id="validationLastName" name="validationLastName" placeholder="Enter your last name" required>
+                                                    <div class="invalid-feedback">
+                                                        Please enter your last name.
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="email">Email Address</label>
-                                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email address" autocomplete="off" required>
-                                                <div id="email-validation" class="invalid-feedback">
-                                                    Please enter your email.
+                                                <div class="form-group">
+                                                    <label for="email">Email Address</label>
+                                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email address" required>
+                                                    <div id="email-validation" class="invalid-feedback">
+                                                        Please enter your email.
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="password">Password</label>
-                                                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" autocomplete="off" required>
-                                                <div class="invalid-feedback"> Please enter your password.</div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="confirm-password">Confirm Password</label>
-                                                <input type="password" class="form-control" id="confirm-password" name="password" placeholder="Please confirm your password" autocomplete="off" required>
-                                                <div class="invalid-feedback"> Please confirm your password.</div>
-                                                <p class="msg" id="messg"></p>
-                                            </div>
+                                                <div class="form-group">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                                                    <div class="invalid-feedback"> Please enter your password.</div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="confirm-password">Confirm Password</label>
+                                                    <input type="password" class="form-control" id="confirm-password" name="password" placeholder="Please confirm your password" required>
+                                                    <div class="invalid-feedback"> Please confirm your password.</div>
+                                                    <p class="msg" id="messg"></p>
+                                                </div>
 
-                                            <p>Already registered? <a data-bs-toggle="modal" data-bs-target="#logInModal" style="color:red; text-decoration:none;" href="#">Login here</a></p>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="submit" onclick="checkEmailPasswords()" class="btn btn-secondary">Sign Up</button>
-                                            </div>
-                                        </form>
+                                                <p>Already registered? <a data-bs-toggle="modal" data-bs-target="#logInModal" style="color:red; text-decoration:none;" href="#">Login here</a></p>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" onclick="checkEmailPasswords()" class="btn btn-secondary">Sign Up</button>
+                                                </div>
+                                            </form>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
         </nav>
-    </header>
+    </div>
+    </div>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
