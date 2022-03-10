@@ -1,3 +1,4 @@
+//validation functions
 (function() {
     'use strict';
 
@@ -21,9 +22,23 @@ function checkEmailPasswords() {
     let confirmPassword = document.getElementById("confirm-password").value;
     let msg = document.getElementById("messg");
 
-    if (passwords != confirmPassword) {
+    if (passwords == "" || confirmPassword == "") {
+        msg.textContent = "";
+    } else if (passwords != confirmPassword) {
         msg.textContent = "Passwords do not match";
     } else {
         msg.textContent = "Passwords match";
     }
 }
+
+$(document).ready(function() {
+    var $grid = $('#product-list').isotope({
+        // options
+    });
+    // filter items on button click
+    $('.filter-button-group').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+
+        $grid.isotope({ filter: filterValue });
+    });
+})

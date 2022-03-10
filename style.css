@@ -92,7 +92,6 @@
 .active-filter-btn {
     background-color: yellowgreen;
     color: #fff!important;
-    border-color: yellowgreen!important;
 }
 
 .btn:hover {
@@ -100,8 +99,8 @@
 }
 
 .image span {
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -126,11 +125,6 @@
     justify-content: center;
     background-color: black;
     color: white;
-}
-
-.image-resize {
-    height: 400px;
-    width: 400px;
 }
 
 .join {
@@ -200,8 +194,13 @@
     margin-right: 45%
 }
 
-.dropdown-menu {
-    background-color: red;
+.dropdown-toggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.example {
+    height: 550px;
 }
 
 .signUpBtn {
@@ -235,6 +234,10 @@
 
 .testi {
     text-align: center;
+}
+
+.row {
+    display: flex;
 }
 
 .testimonials .row {

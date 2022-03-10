@@ -31,13 +31,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav nav-tabs text-nowrap flex-row mx-md-auto order-1 order-md-2">
                         <li role="presentation" class="nav-item">
-                            <a class="nav-link active-filter-btn" href="index.html">Home</a>
+                            <a class="nav-link " href="index.html">Home</a>
                         </li>
                         <li role="presentation" class="nav-item">
                             <a class="nav-link" href="men.html">Men</a>
                         </li>
                         <li role="presentation" class="nav-item">
-                            <a class="nav-link" href="women.html">Women</a>
+                            <a class="nav-link active-filter-btn" href="women.html">Women</a>
                         </li>
                         <li role="presentation" class="nav-item">
                             <a class="nav-link" href="kids.html">Kids</a>
@@ -54,7 +54,7 @@
                             <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                            <a class="nav-link" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
                         </li>
                         <li class="nav-item dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -104,38 +104,48 @@
                                       </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
+                                            <form class="needs-validation" method="post" novalidate>
                                                 <div class="form-group">
-                                                    <label for="exampleInputEmail1">First Name</label>
-                                                    <input type="text" class="form-control" id="" placeholder="Enter your first name">
+                                                    <label for="validationFirstName">First Name</label>
+                                                    <input type="text" class="form-control" id="validationFirstName" name="validationFirstName" placeholder="Enter your first name" required>
+                                                    <div class="invalid-feedback">
+                                                        Please enter your first name.
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="validationLastName">Last Name</label>
+                                                    <input type="text" class="form-control" id="validationLastName" name="validationLastName" placeholder="Enter your last name" required>
+                                                    <div class="invalid-feedback">
+                                                        Please enter your last name.
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="exampleInputEmail1">Last Name</label>
-                                                    <input type="text" class="form-control" id="" placeholder="Enter your last name">
+                                                    <label for="email">Email Address</label>
+                                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email address" required>
+                                                    <div id="email-validation" class="invalid-feedback">
+                                                        Please enter your email.
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="exampleInputEmail1">Email Address</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                                                    <div class="invalid-feedback"> Please enter your password.</div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="exampleInputEmail1">Confirm Email Address</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirm email address">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputEmail1">Password</label>
-                                                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter password">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputEmail1">Confirm Password</label>
-                                                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirm password">
+                                                    <label for="confirm-password">Confirm Password</label>
+                                                    <input type="password" class="form-control" id="confirm-password" name="password" placeholder="Please confirm your password" required>
+                                                    <div class="invalid-feedback"> Please confirm your password.</div>
+                                                    <p class="msg" id="messg"></p>
                                                 </div>
 
                                                 <p>Already registered? <a data-bs-toggle="modal" data-bs-target="#logInModal" style="color:red; text-decoration:none;" href="#">Login here</a></p>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" onclick="checkEmailPasswords()" class="btn btn-secondary">Sign Up</button>
+                                                </div>
                                             </form>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-secondary">Sign Up</button>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +159,7 @@
     </div>
     </div>
 
-    <section>
+    <section class="example">
         <p>This is women page</p>
     </section>
 
