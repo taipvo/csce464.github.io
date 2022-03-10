@@ -89,6 +89,15 @@
     align-items: center;
 }
 
+.sale-price {
+    font-size: 30px;
+}
+
+.sale-price span {
+    text-decoration: line-through;
+    color: red;
+}
+
 .active-filter-btn {
     background-color: yellowgreen;
     color: #fff!important;
@@ -124,6 +133,20 @@
     align-items: center;
     justify-content: center;
     background-color: black;
+    color: white;
+}
+
+.image2 .sale-off {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 50px;
+    height: 35px;
+    padding-left: 10px;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
     color: white;
 }
 
