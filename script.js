@@ -17,7 +17,7 @@
 
 })();
 
-function checkEmailPasswords() {
+function checkPasswords() {
     let passwords = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirm-password").value;
     let msg = document.getElementById("messg");

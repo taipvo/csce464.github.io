@@ -17,9 +17,22 @@
     color: black;
 }
 
+.modal-footer {
+    padding: 10px 10px 0px 0px;
+}
+
 .nav-tabs li a {
     color: white;
     text-transform: uppercase;
+}
+
+.form-check {
+    float: right;
+}
+
+.form-check-input {
+    margin-top: 12px;
+    margin-left: -19px;
 }
 
 .text-white {
